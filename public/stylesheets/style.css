@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.form-group {
+  padding: 8px;
+}
+
+input {
+  padding: 3px;
+  width: 20%;
+  margin-top: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4479BA;
+  color: #fff;
+  font-size: 14px;  
+}
+
+.result {
+  padding: 20px 0px;
+  font-weight: bold;
+}

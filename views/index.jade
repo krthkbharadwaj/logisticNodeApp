@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 Welcome to Logistic App
+
+  form(id='drivers', method='POST', action='/add-driver')    
+    h3(for='title') Add Driver
+    .form-group
+    label(for='name') Driver name
+    </br>   
+    input(type='text',name='name',class='form-control', id='driver-name',placeholder='Please enter driver name',required)
+    </br>
+   
+    .form-group
+    label(for='location') Driver location
+    </br>
+    input(type='text',name='current_location',class='form-control',id='driver-location',placeholder='Please enter driver location',required)
+    </br>
+     
+    .form-group
+    button.btn.btn-default Submit
+
+  div(class="result") #{result} 
