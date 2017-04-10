@@ -26,8 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/drivers', drivers);
-app.use('/loads', loads);
+app.use('/api/drivers', drivers);
+app.use('/api/loads', loads);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

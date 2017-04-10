@@ -1,6 +1,13 @@
-exports.host = "localhost";
+var mysql = require('mysql');
+var con = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : 'root',
+    database : 'logistic'
+});
 
-exports.username = "root";
-exports.password = "root";
+con.connect(function(err) {
+    if (err) throw err;
+});
 
-exports.dbname = "logistic";
+module.exports = con;
